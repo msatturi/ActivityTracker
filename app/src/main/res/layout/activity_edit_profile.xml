@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.satturi.android.activitytracker.EditProfile">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="  Name : " />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="  Age: " />
+
+            <EditText
+                android:id="@+id/Age"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="  Gender : " />
+
+            <Spinner
+                android:id="@+id/egender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/gender" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="  Height (inches): " />
+
+            <EditText
+                android:id="@+id/Height"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="  Weight (lbs): " />
+
+            <EditText
+                android:id="@+id/Weight"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="  Goal Weight (lbs): " />
+
+            <EditText
+                android:id="@+id/GoalWeight"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="  Goal Date : " />
+
+            <EditText
+                android:id="@+id/GoalDate"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Update"
+                android:text="Update"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Cancel"
+                android:text="Cancel"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
